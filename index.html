@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrXTripelFive | Elite Fullstack & Cyber Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loader">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <h2>MrXTripelFive</h2>
+        <p>Initializing Systems...</p>
+    </div>
+
+    <!-- Chat Bot - SELALU AKTIF -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="chat-icon"><i class="fas fa-robot"></i></div>
+            <span>Cyber Assistant</span>
+            <button id="minimizeChat"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+                <div class="message bot">
+                    👋 Selamat datang di portfolio <strong>MrXTripelFive</strong>! 
+                    Saya Cyber Assistant. Ketik <code>portfolio</code>, <code>skills</code>, <code>game</code>, atau <code>contact</code> untuk info!
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Tulis pesan... (ESC untuk tutup input)">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-terminal"></i>
+            <span>MrXTripelFive</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#game" class="nav-link">Game Zone</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section - SUDAH DIHAPUS WHATSAPP FLOAT -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-content">
+            <div class="hero-badge">ELITE DEVELOPER 2026</div>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="MrXTripelFive">MrXTripelFive</span>
+            </h1>
+            <p class="hero-subtitle">Fullstack Developer | Cyber Security Expert | 5+ Years Elite Experience</p>
+            <div class="hero-stats">
+                <span class="stat-item"><strong>50+</strong> Projects</span>
+                <span class="stat-item"><strong>100%</strong> Success</span>
+                <span class="stat-item"><strong>24/7</strong> Support</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary btn-large">
+                    <i class="fas fa-rocket"></i> Hire Elite Developer
+                </a>
+                <a href="#portfolio" class="btn-secondary btn-large">
+                    <i class="fas fa-briefcase"></i> View Masterpieces
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Digital Clock -->
+    <div class="digital-clock">
+        <div class="clock-display">
+            <div class="time" id="time"></div>
+            <div class="date" id="date"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Elite Developer</h2>
+                <p class="section-subtitle">Mengubah ide menjadi solusi digital yang aman dan scalable</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        Fullstack Developer bersertifikat dengan pengalaman 5+ tahun membangun sistem enterprise-level. 
+                        Cyber Security Expert yang menguasai penetration testing, ethical hacking, dan threat intelligence.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Zero Security Breaches</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Lightning Fast Delivery</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-infinity"></i>
+                            <span>Scalable Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Master Skills</h2>
+                <p class="section-subtitle">Expert level di semua stack development & security</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Mastery</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="98"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vue.js</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Next.js</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="97"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Power</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="96"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="94"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Go</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="92"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cyber Security</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Penetration Testing</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="99"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Ethical Hacking</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="98"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Threat Intelligence</span>
+                            <div class="skill-progress"><div class="progress-fill" data-width="97"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio Masterpieces</h2>
+                <p class="section-subtitle">Proyek-proyek enterprise level yang sudah live</p>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section - SUPER CHALLENGING -->
+    <section id="game" class="section game-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cyber Defense Challenge</h2>
+                <p class="section-subtitle">Lindungi server dari serangan cyber! Semakin tinggi score, semakin susah!</p>
+            </div>
+            <div class="game-arena">
+                <canvas id="gameCanvas" width="900" height="500"></canvas>
+                <div class="game-hud">
+                    <div class="hud-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Score: <strong id="gameScore">0</strong></span>
+                    </div>
+                    <div class="hud-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Health: <strong id="gameHealth">100</strong></span>
+                    </div>
+                    <div class="hud-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Level: <strong id="gameLevel">1</strong></span>
+                    </div>
+                    <div class="hud-item">
+                        <span id="gameTimer">00:00</span>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <button id="startGame" class="btn-primary btn-large">
+                        <i class="fas fa-play"></i> START CHALLENGE
+                    </button>
+                    <button id="pauseGame" class="btn-secondary" disabled>
+                        <i class="fas fa-pause"></i> PAUSE
+                    </button>
+                    <div class="game-instructions">
+                        <i class="fas fa-mouse-pointer"></i> Gerakkan mouse untuk tembak hacker!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Collaborate?</h2>
+                <p class="section-subtitle">Mari wujudkan project impian Anda!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-whatsapp contact-icon"></i>
+                    <h3>WhatsApp Business</h3>
+                    <p>Chat langsung dengan MrXTripelFive</p>
+                    <a href="https://wa.me/628818671759?text=Hi%20MrXTripelFive%2C%20saya%20tertarik%20dengan%20portfolio%20Anda!" 
+                       class="btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat Sekarang
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email Priority</h3>
+                    <p>Response dalam 2 jam</p>
+                    <a href="mailto:mrxtripelfive@gmail.com?subject=Project%20Inquiry" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-terminal"></i>
+                    <span>MrXTripelFive</span>
+                </div>
+                <p>&copy; 2026 MrXTripelFive. Elite Fullstack Developer & Cyber Security Expert. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="backend.js"></script>
+</body>
+</html> 
